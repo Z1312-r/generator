@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Architecture Generator</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>AI Architecture Generator</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#generator">Generator</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="home">
+        <section>
+            <h2>Welcome to the Future of Architectural Design</h2>
+            <p>Generate architectural designs with AI tailored to your preferences.</p>
+            <button onclick="location.href='#generator'">Start Designing</button>
+        </section>
+    </main>
+    <section id="generator">
+        <h2>AI Design Generator</h2>
+        <form id="designForm">
+            <label for="style">Style:</label>
+            <select id="style" name="style">
+                <option value="modern">Modern</option>
+                <option value="classic">Classic</option>
+                <option value="minimalist">Minimalist</option>
+            </select>
+            <label for="size">Size (m²):</label>
+            <input type="number" id="size" name="size" required>
+            <label for="material">Preferred Material:</label>
+            <input type="text" id="material" name="material">
+            <button type="submit">Generate Design</button>
+        </form>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div id="galleryContainer"></div>
+    </section>
+    <section id="faq">
+        <h2>FAQ</h2>
+        <p>Common questions about using our AI Generator.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 AI Architecture Generator. All rights reserved.</p>
+    </footer>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
